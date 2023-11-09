@@ -1,0 +1,195 @@
+* {
+	padding:0px;
+	margin:0px;
+}
+
+header {
+	height:10vh;
+	background-color:black;
+	position:fixed;
+	width:100%;
+	z-index:1000;
+}
+
+nav {
+	display:flex;
+	padding-left:0.5em;
+	padding-right:1em;
+	padding-top:0.5em;
+}
+
+nav a {
+	text-decoration:none;
+	color: white;
+	font-size:1.5em;
+	font-family:Red Hat Display,sans-serif;
+	padding-top:0.5em;
+	padding-left:1.5em;
+	padding-right:1.5em;
+}
+
+nav a:hover {
+	color: rgb(252,196,2);
+}
+
+main {
+	background-color: rgb(31,2,29);
+	padding-bottom:1em;
+	width:100%;
+}
+
+footer {
+	width:100%;
+	padding-top:3em;
+	padding-bottom:3em;
+	background-color:black;
+	border-top:1px solid white;}
+
+h1 {
+	color: white;
+	font-size:5em;
+	margin-bottom:1.0em;
+	text-align:center;
+	font-family:Red Hat Display,sans-serif;
+}
+
+p {
+	color:white;
+	font-size:1.5em;
+	padding-left:0.5em;
+	font-family:Red Hat Display,sans-serif;
+	padding-top:0.5em;
+}
+
+#logo-image {
+	height:50px; 
+	padding-right:3em; 
+	margin-left:15px;
+}
+
+.team-title, .partner-title {
+	color : white;
+	text-align:center;
+	font-size:2.5em;
+	font-family:Red Hat Display,sans-serif;
+	width: 90%; 
+	border-bottom: 1px solid white; 
+	line-height: 0.1em;
+	margin-left:5%;
+}
+
+.team-title span, .partner-title span {
+	background:rgb(31,2,29);
+    padding:0 2em;
+}
+
+.team-members {
+	display: flex;
+	justify-content: center;
+	margin-top:3em;
+	margin-bottom:3em;
+}
+
+.member-div {
+	text-align:center;
+	margin-top:2em;
+	margin-bottom:2em;
+	margin-left:5em;
+	margin-right:5em;
+}
+
+.member-image {
+	border:5px solid rgb(252,196,2);
+	padding:3px;
+	border-radius:50%;
+}
+
+.member-name {
+	color : rgb(252,196,2);
+	font-size:1.8em;
+	font-family:Red Hat Display,sans-serif;
+}
+
+.member-role {
+	padding:0px;
+}
+
+.my-slides {
+	height:100%;
+	width:100%;
+}
+
+.partner-images {
+	margin-top:3em;
+	margin-bottom:3em;
+	text-align:center;
+}
+
+.partner-box {
+	margin-top:1em;
+	margin-bottom:1em;
+	align-items: center;
+}
+
+.sponsor-image {
+	width:20%;
+	height:20%;
+	margin:1em 5em;
+}
+
+.info-box {
+	max-width:60%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:3em;
+}
+
+.info-image {
+	max-width:100%;
+	padding-left:0.5em;
+	padding-top:1.5em;
+	padding-bottom:1.0em;
+}
+
+.text-box {
+	border-left: 0.8em solid rgb(252,196,2);
+}
+
+.footer-privacy {
+	display:flex;
+}
+
+.footer-text {
+	font-size:1.5em;
+	margin-left:2em;
+}
+
+.footer-link {
+	color:rgb(252,196,2);
+	text-decoration:none;
+	font-size:1.5em;
+	padding-left:1.5em;
+	padding-top:0.5em;
+	font-family:Red Hat Display,sans-serif;
+}
+
+.social {
+	text-decoration:none;
+	color:white;
+	padding:0.5em;
+	font-size:3em;
+}
+
+.social-box {
+	display:flex;
+}
+
+.yellow-button {
+	background-color: rgb(252,196,2);
+	color:white;
+	border:none;
+	font-size:1.5em;
+	font-family:Red Hat Display,sans-serif;
+	padding:10px;
+	margin-top:15px;
+}

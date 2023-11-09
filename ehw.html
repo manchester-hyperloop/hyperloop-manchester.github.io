@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hyperloop Manchester</title>
+	<link rel="icon" type="image/png" href="Images/logo.png"/>
+	<link rel="stylesheet" href="myStyles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<img id="logo-image" src="Images/new_logo_horizontal.jpg">
+			<a href="index.html">About Us</a>
+			<a href="teams.html">Teams</a>
+			<a href="#EHW"><u>EHW</u></a>
+			<a href="partners.html">Partners</a>
+			<a href="media.html">Media</a>
+		</nav>
+	</header>
+	<main>
+		<section class="slideshow">
+			<img class="my-slides" src="Images/ehw1.jpg">
+			<img class="my-slides" src="Images/ehw2.jpg">
+			<img class="my-slides" src="Images/ehw3.jpg">
+			<img class="my-slides" src="Images/ehw4.jpg">
+			<img class="my-slides" src="Images/ehw5.jpg">
+		</section>
+
+		<script>
+			var myIndex = 0;
+			carousel();
+
+			function carousel(){
+				var i;
+				var x = document.getElementsByClassName("my-slides");
+				for (i =0; i < x.length; i++){
+					x[i].style.display = "none";
+				}
+				myIndex++;
+				if (myIndex > x.length){
+					myIndex = 1;
+				}
+				x[myIndex-1].style.display = "block";
+				setTimeout(carousel, 3000);
+			}
+		</script>
+		<section class="info">
+			<div class="info-box">
+				<div class="text-box">
+					<p>Since our inception Hyperloop Manchester has looked to participate in European Hyperloop Week (EHW) - an annual international competition that brings together the Hyperloop community to discuss the technology, feasibility and scalability of the Hyperloop, encouraging innovation in the industry.</p>
+					<p>Despite being a young team, we at Hyperloop Manchester have a history of successes in this competition: becoming an <b>2021 EHW finalist</b> and obtaining a Top 5 place in <b>Best Levitation Design</b> the same year.</p>
+				</div>
+			</div>
+
+			<div class="info-box">
+				<h1>EHW 2023</h1>
+				<div class="text-box">
+					<p>Please view our Full-Scale Technical Integration Report by clicking the button below.</p>
+					<div style="text-align: center">
+						<a href="Files/full-scale-report-2023.pdf" download>
+							<button class="yellow-button">Full-Scale Submission 2023</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+		<footer>
+		<div class="footer-privacy">
+			<p class="footer-text">Hyperloop Manchester © 2021</p>
+			<a class="footer-link" href="#">Terms</a>
+			<a class="footer-link" href="#">Privacy</a>
+		</div>
+		<div class="social-box">
+			<a class="social" href="https://www.facebook.com/hyperloopmanchester/">
+				<span class="fa fa-facebook social"></span>
+			</a>
+			<a class="social" href="https://www.instagram.com/hyperloopmanchester/">
+				<span class="fa fa-instagram social"></span>
+			</a>
+			<a class="social"href="https://www.linkedin.com/company/hyperloop-manchester/">
+				<span class="fa fa-linkedin social"></span>
+			</a>
+			<a class="social" href="https://www.youtube.com/@hyperloopmanchester3107/featured">
+				<span class="fa fa-youtube social"></span>
+			</a>
+			<a class="social" href="https://twitter.com/hyperloopmcr">
+				<span class="fa fa-twitter social"></span>
+			</a>
+			<a class="social"href="mailto:hyperloopmanchester@gmail.com">
+				<span class="fa fa-envelope social"></span>
+			</a>
+		</div>
+	</footer>
+</body>
+</html>
