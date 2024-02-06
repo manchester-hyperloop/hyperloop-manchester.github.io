@@ -1,110 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Hyperloop Manchester</title>
-	<link rel="icon" type="image/png" href="Images/logo.png"/>
-	<link rel="stylesheet" href="myStyles.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-	<header>
-		<nav>
-			<img id="logo-image" src="Images/new_logo_horizontal.jpg">
-			<a href="#aboutus"><u>About Us</u></a>
-			<a href="teams.html">Teams</a>
-			<a href="ehw.html">EHW</a>
-			<a href="partners.html">Partners</a>
-			<a href="media.html">Media</a>
-		</nav>
-	</header>
-	<main>
-		<section class="slideshow">
-			<img class="my-slides" src="Images/slide-pod.jpg">
-			<img class="my-slides" src="Images/slide-pod-concrete.jpg">
-			<img class="my-slides" src="Images/slide-pod-country.jpg">
-			<img class="my-slides" src="Images/slide-tube.jpg">
-			<img class="my-slides" src="Images/slide-pod-tube.jpg">
-		</section>
-
-		<script>
-			var myIndex = 0;
-			carousel();
-
-			function carousel(){
-				var i;
-				var x = document.getElementsByClassName("my-slides");
-				for (i =0; i < x.length; i++){
-					x[i].style.display = "none";
-				}
-				myIndex++;
-				if (myIndex > x.length){
-					myIndex = 1;
-				}
-				x[myIndex-1].style.display = "block";
-				setTimeout(carousel, 3000);
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Hyperloop-Manchester</title>
+		<link rel="icon" type="image/png" href="Images/logo.png"/>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+				font-family:Red Hat Display,sans-serif;
+				box-sizing: border-box;
 			}
-		</script>
-		<section class="info">
-			<div class="info-box">
-				<h1>WHO ARE WE?</h1>
-				<div class="text-box">
-					<p>Hyperloop Manchester is a student-led Hyperloop project organization aiming to compete in the Hyperloop competitions organized by SpaceX or other organisations and to share our knowledge with people around the world.</p>
-					<p>The team is founded in 2019. Now, Hyperloop Manchester has around 70 team members and around 50 alumni members from different nationalities and backgrounds. Furthermore, the team consists of three main divisions and eight subdivisions.</p>
-					<img class="info-image" src="Images/team2022.jpg">
-				</div>
-			</div>
 
-			<div class="info-box">
-				<h1>WHAT IS HYPERLOOP?</h1>
-				<div class="text-box">
-					<p>Hyperloop is a proposed high-speed transportation system in which specialised pods are accelerated through a low-pressure tube to achieve high speeds. The system is intended to provide a more cost-effective and faster mode of travel between cities separated by distances less than approximately nine hundred miles.</p>
-					<p>The Hyperloop pod which is currently being designed by Hyperloop Manchester team is Hyperman I.</p>
-					<img class="info-image" src="Images/pod-image-side-angle-view.png">
-				</div>
-			</div>
+			header {
+				width: 100%;
+				padding: 0 5%;
+				position: relative;
+			}
 
-			<div class="info-box">
-				<h1>MAP OF THE REVOLUTION</h1>
-				<div class="text-box">
-					<img class="info-image" src="Images/map.jpg">
-				</div>
-			</div>
+			nav {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 20px 0;
+			}
 
-			<div class="info-box">
-				<h1>INNOVATION STARTS HERE</h1>
-				<div class="text-box">
-					<img class="info-image" src="Images/braking-system.jpg">
-				</div>
-			</div>
-		</section>
-	</main>
-	<footer>
-		<div class="footer-privacy">
-			<p class="footer-text">Hyperloop Manchester © 2021</p>
-			<a class="footer-link" href="#">Terms</a>
-			<a class="footer-link" href="#">Privacy</a>
+			footer {
+				width:100%;
+				padding-top:5em;
+				padding-bottom:3em;
+				background-color:  black;
+			}
+
+			.logo-image {
+				height:50px; 
+			}
+
+			.navigation_title {
+				position: relative;
+				color: white;
+				text-decoration: none;
+				display: inline-block;
+				margin: 10px 30px;
+				font-size:1.2em;
+			}
+
+			.navigation_title:after {
+				content: '';
+				position: absolute;
+				width: 100%;
+				transform: scaleX(0);
+				height: 2px;
+				bottom: 0;
+				left: 0;
+				background-color: rgb(252,196,2);
+				transform-origin: bottom left;
+				transition: transform 0.25s ease-out;
+			}
+
+			.navigation_title:hover:after {
+			  	transform: scaleX(1);
+			  	transform-origin: bottom left;
+			}
+
+			.parallax {
+				height: 100vh; 
+				background-attachment: fixed;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+
+			.info-box {
+				max-width: 80%;
+				align-items: center;
+				margin-left:auto;
+				margin-right:auto;
+				display:flex;
+				padding-top:1em;
+				padding-bottom: 1em;
+			}
+
+			.text-box {
+				/*border-left: 0.8em solid rgb(252,196,2);*/
+				display:flex;
+				flex-direction:column;
+			}
+
+			.info-text {
+				color: black;
+				font-size:1em;
+				margin-bottom:1.0em;
+				text-align:center;
+			}
+
+			.info-title {
+				color: black;
+				margin-bottom:1em;
+				font-size: 2.2em;
+				text-align: center;
+			}
+
+			.info-image {
+				width:40vw;
+				padding: 10%;
+			}
+
+			.learn-more {
+				background-color: transparent;
+				border: 2px solid gray;
+				border-radius: 18px;
+				margin-top:1em;
+				margin-left:auto;
+				margin-right:auto;
+				padding-left:30px;
+				padding-right:30px;
+				padding-top:10px;
+				padding-bottom:10px;
+			}
+
+			.learn-more a {
+				text-decoration: none;
+				color: black;
+			}
+
+			.learn-more:hover {
+				border-color: rgb(252,196,2);
+			}
+
+			.footer-privacy {
+				display:flex;
+			}
+
+			.footer-text {
+				color: white;
+				font-size:1.5em;
+				margin-left:2em;
+			}
+
+			.footer-link {
+				color:rgb(252,196,2);
+				text-decoration:none;
+				font-size:1.5em;
+				padding-left:1.5em;
+				padding-top:0.5em;
+				font-family:Red Hat Display,sans-serif;
+			}
+
+			.social {
+				text-decoration:none;
+				color:white;
+				padding:0.5em;
+				font-size:3em;
+			}
+
+			.social-box {
+				display:flex;
+			}
+			.footer-line {
+				height: 1px;
+				width: 60%;
+				background: white;
+			}
+		</style>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body style="background-color: white; height:100%; display:grid;">
+		<div class="parallax" style="object-fit:cover; background-image:url('Images/slide-pod.jpg');">
+			<header>
+				<nav>
+					<div style="align-items: center; display:flex;">
+						<a href="#"><img class="logo-image" src="Images/new_logo_transparent.png"></a>
+						<a class="navigation_title" href="hyperloop.html">Hyperloop</a>
+						<a class="navigation_title" href="ehw.html">EHW</a>
+						<a class="navigation_title" href="teams.html">Team</a>
+						<a class="navigation_title" href="partners.html">Partners</a>
+					</div>
+					<!--<div>
+						<a class="navigation_title" href="new_partners.html">Partners</a>
+						<a class="navigation_title" href="contactus.html">Contact</a>
+					</div>-->
+				</nav>
+			</header>
 		</div>
-		<div class="social-box">
-			<a class="social" href="https://www.facebook.com/hyperloopmanchester/">
-				<span class="fa fa-facebook social"></span>
-			</a>
-			<a class="social" href="https://www.instagram.com/hyperloopmanchester/">
-				<span class="fa fa-instagram social"></span>
-			</a>
-			<a class="social"href="https://www.linkedin.com/company/hyperloop-manchester/">
-				<span class="fa fa-linkedin social"></span>
-			</a>
-			<a class="social" href="https://www.youtube.com/@hyperloopmanchester3107/featured">
-				<span class="fa fa-youtube social"></span>
-			</a>
-			<a class="social" href="https://twitter.com/hyperloopmcr">
-				<span class="fa fa-twitter social"></span>
-			</a>
-			<a class="social"href="mailto:hyperloopmanchester@gmail.com">
-				<span class="fa fa-envelope social"></span>
-			</a>
+
+		<div class="info-box">
+			<div>
+				<img class="info-image" src="Images/slide-tube.jpg">
+			</div>
+			<div class="text-box">
+				<h1 class="info-title">WHAT IS THE HYPERLOOP?</h1>
+				<p class="info-text">Step into the future of transportation with Hyperloop! Imagine traveling between cities at speeds exceeding 700 miles per hour, all within streamlined capsules gliding through low-pressure tubes.</p>
+				<p class="info-text">Developed by visionaries like Elon Musk, Hyperloop promises to revolutionize how we move, cutting travel times dramatically. But its journey from concept to reality is filled with challenges and innovation. Join us as we explore the groundbreaking technology and the exciting possibilities it holds for the future of travel.</p>
+				<button class="learn-more"><a href="hyperloop.html">Learn More</a></button>
+			</div>
 		</div>
-	</footer>
-</body>
+
+		<hr>
+
+		<div class="info-box">
+			<div class="text-box"><!--style="border-right: 0.8em solid rgb(252,196,2); border-left:none;"-->
+				<h1 class="info-title">EUROPEAN HYPERLOOP WEEK</h1>
+				<p class="info-text">Since our inception Hyperloop Manchester has looked to participate in European Hyperloop Week (EHW) - an annual international competition that brings together the Hyperloop community to discuss the technology, feasibility and scalability of the Hyperloop, encouraging innovation in the industry.</p>
+				<p class="info-text">Despite being a young team, we at Hyperloop Manchester have a history of successes in this competition: becoming an <b>2021 EHW finalist</b> and obtaining a Top 5 place in <b>Best Levitation Design</b> the same year.</p>
+				<button class="learn-more"><a href="ehw.html">Learn More</a></button>
+			</div>
+			<div>
+				<img class="info-image" src="Images/ehw1.jpg">
+			</div>
+		</div>
+
+		<hr>
+
+		<div class="info-box">
+			<div>
+				<img class="info-image" src="Images/team2022.jpg">
+			</div>
+			<div class="text-box">
+				<h1 class="info-title">MEET THE TEAM</h1>
+				<p class="info-text">Hyperloop Manchester is a student-led Hyperloop project organization aiming to compete in the Hyperloop competitions organized by SpaceX or other organisations and to share our knowledge with people around the world.</p>
+				<p class="info-text">The team is founded in 2019. Now, Hyperloop Manchester has around 70 team members and around 50 alumni members from different nationalities and backgrounds. Furthermore, the team consists of three main divisions and eight subdivisions.</p>
+				<button class="learn-more"><a href="teams.html">Learn More</a></button>
+			</div>
+		</div>
+
+		<footer>
+			<div style="display:flex; justify-content: center;">
+				<a class="social" href="https://twitter.com/hyperloopmcr">
+					<span class="fa fa-twitter social"></span>
+				</a>
+				<a class="social"href="mailto:hyperloopmanchester@gmail.com">
+					<span class="fa fa-envelope social"></span>
+				</a>
+				<a class="social" href="https://www.instagram.com/hyperloopmanchester/">
+					<span class="fa fa-instagram social"></span>
+				</a>
+				<a class="social"href="https://www.linkedin.com/company/hyperloop-manchester/">
+					<span class="fa fa-linkedin social"></span>
+				</a>
+			</div>
+			<div style="display:flex; justify-content: center; margin-bottom:1em;">
+				<div class="footer-line"></div>
+			</div>
+			<div style="display:flex; justify-content: center;">
+				<p style="color:white;">Hyperloop Manchester © 2021</p>
+			</div>
+		</footer>
+	</body>
 </html>

@@ -1,97 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Hyperloop Manchester</title>
-	<link rel="icon" type="image/png" href="Images/logo.png"/>
-	<link rel="stylesheet" href="myStyles.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-	<header>
-		<nav>
-			<img id="logo-image" src="Images/new_logo_horizontal.jpg">
-			<a href="index.html">About Us</a>
-			<a href="teams.html">Teams</a>
-			<a href="#EHW"><u>EHW</u></a>
-			<a href="partners.html">Partners</a>
-			<a href="media.html">Media</a>
-		</nav>
-	</header>
-	<main>
-		<section class="slideshow">
-			<img class="my-slides" src="Images/ehw1.jpg">
-			<img class="my-slides" src="Images/ehw2.jpg">
-			<img class="my-slides" src="Images/ehw3.jpg">
-			<img class="my-slides" src="Images/ehw4.jpg">
-			<img class="my-slides" src="Images/ehw5.jpg">
-		</section>
-
-		<script>
-			var myIndex = 0;
-			carousel();
-
-			function carousel(){
-				var i;
-				var x = document.getElementsByClassName("my-slides");
-				for (i =0; i < x.length; i++){
-					x[i].style.display = "none";
-				}
-				myIndex++;
-				if (myIndex > x.length){
-					myIndex = 1;
-				}
-				x[myIndex-1].style.display = "block";
-				setTimeout(carousel, 3000);
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Hyperloop-Manchester</title>
+		<link rel="icon" type="image/png" href="Images/logo.png"/>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+				font-family:Red Hat Display,sans-serif;
+				box-sizing: border-box;
 			}
-		</script>
-		<section class="info">
-			<div class="info-box">
-				<div class="text-box">
-					<p>Since our inception Hyperloop Manchester has looked to participate in European Hyperloop Week (EHW) - an annual international competition that brings together the Hyperloop community to discuss the technology, feasibility and scalability of the Hyperloop, encouraging innovation in the industry.</p>
-					<p>Despite being a young team, we at Hyperloop Manchester have a history of successes in this competition: becoming an <b>2021 EHW finalist</b> and obtaining a Top 5 place in <b>Best Levitation Design</b> the same year.</p>
-				</div>
-			</div>
 
-			<div class="info-box">
-				<h1>EHW 2023</h1>
-				<div class="text-box">
-					<p>Please view our Full-Scale Technical Integration Report by clicking the button below.</p>
-					<div style="text-align: center">
-						<a href="Files/full-scale-report-2023.pdf" download>
-							<button class="yellow-button">Full-Scale Submission 2023</button>
-						</a>
+			header {
+				width: 100%;
+				padding: 0 5%;
+				position: relative;
+			}
+
+			nav {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 20px 0;
+			}
+
+			footer {
+				width:100%;
+				padding-top:5em;
+				padding-bottom:3em;
+				background-color:  black;
+			}
+			.footer-line {
+				height: 1px;
+				width: 60%;
+				background: white;
+			}
+
+			.logo-image {
+				height:50px; 
+			}
+
+			.navigation_title {
+				position: relative;
+				color: white;
+				text-decoration: none;
+				display: inline-block;
+				margin: 10px 30px;
+				font-size:1.2em;
+			}
+
+			.navigation_title:after {
+				content: '';
+				position: absolute;
+				width: 100%;
+				transform: scaleX(0);
+				height: 2px;
+				bottom: 0;
+				left: 0;
+				background-color: rgb(252,196,2);
+				transform-origin: bottom left;
+				transition: transform 0.25s ease-out;
+			}
+
+			.navigation_title:hover:after {
+			  	transform: scaleX(1);
+			  	transform-origin: bottom left;
+			}
+
+			.parallax {
+				height: 100vh; 
+				background-attachment: fixed;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+
+			.info-box {
+				max-width: 80%;
+				align-items: center;
+				margin-left:auto;
+				margin-right:auto;
+				display:flex;
+				flex-direction: column;
+				padding-top:1em;
+				padding-bottom: 1em;
+			}
+
+			.text-box {
+				display:flex;
+				flex-direction:column;
+			}
+
+			.info-text {
+				color: black;
+				font-size:1em;
+				margin-bottom:1.0em;
+				text-align:center;
+			}
+
+			.info-title {
+				color: black;
+				margin-bottom:1em;
+				font-size: 2.2em;
+				text-align: center;
+			}
+
+			.info-image {
+				width:40vw;
+				padding: 10%;
+			}
+
+			.learn-more {
+				background-color: transparent;
+				border: 2px solid gray;
+				border-radius: 18px;
+				margin-top:1em;
+				margin-left:auto;
+				margin-right:auto;
+				padding-left:30px;
+				padding-right:30px;
+				padding-top:10px;
+				padding-bottom:10px;
+			}
+
+			.learn-more a {
+				text-decoration: none;
+				color: black;
+			}
+
+			.learn-more:hover {
+				border-color: rgb(252,196,2);
+			}
+
+			.footer-privacy {
+				display:flex;
+			}
+
+			.footer-text {
+				color: white;
+				font-size:1.5em;
+				margin-left:2em;
+			}
+
+			.footer-link {
+				color:rgb(252,196,2);
+				text-decoration:none;
+				font-size:1.5em;
+				padding-left:1.5em;
+				padding-top:0.5em;
+				font-family:Red Hat Display,sans-serif;
+			}
+
+			.social {
+				text-decoration:none;
+				color:white;
+				padding:0.5em;
+				font-size:3em;
+			}
+
+			.social-box {
+				display:flex;
+			}
+			.partner-images {
+				margin-top:3em;
+				margin-bottom:3em;
+				text-align:center;
+			}
+
+			.partner-box {
+				margin-top:1em;
+				margin-bottom:1em;
+				align-items: center;
+			}
+
+			.sponsor-image {
+				width:15%;
+				height:15%;
+				margin:1em 5em;
+			}
+			.text-box {
+				border-left: 0.8em solid rgb(252,196,2);
+			}
+
+			/*.team-title span, .partner-title span {
+				background-color: transparent;
+			    padding:0 2em;
+			}*/
+
+			.yellow-button {
+				background-color: rgb(252,196,2);
+				color:white;
+				border:none;
+				font-size:1.5em;
+				font-family:Red Hat Display,sans-serif;
+				padding:10px;
+				margin-top:15px;
+			}
+
+			.team-title, .partner-title {
+				color : white;
+				text-align:center;
+				font-size:2.5em;
+				font-family:Red Hat Display,sans-serif;
+				padding-left:2em;
+				padding-right:2em;
+			}
+
+			.partner-title-container {
+				display:flex; 
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.line {
+				height: 1px;
+				width: 20%;
+				background: white;
+			}
+
+			.hyperloop-details-box {
+				background-color: white;
+				text-align:center;
+				justify-content: center;
+				padding-left: 20%;
+				padding-right: 20%;
+				padding-top: 4%;
+				padding-bottom: 5%
+			}
+
+			.hyperloop-details-title {
+				color: black;
+				margin-bottom:1em;
+				font-family:Red Hat Display,sans-serif;
+
+			}
+
+			.hyperloop-details-text {
+				color: #8A8A8A;
+				font-family:Red Hat Display,sans-serif;
+			}
+
+			.hyperloop-details-box-2 {
+				display: flex; 
+				flex-direction: column; 
+				margin-left: 10%; 
+				max-width: 30%; 
+				text-align: left; 
+				color: white;
+				font-family:Red Hat Display,sans-serif;
+			}
+
+			.ehw-details-box {
+				background-color: white;
+				text-align: left;
+				display:flex;
+				padding-left: 10%;
+				padding-right: 10%;
+				padding-top: 4%;
+			}
+		</style>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body style="background-color: white; height:100%; display:grid;">
+		<div class="parallax" style="object-fit:cover; background-image:url('Images/ehw1.jpg');">
+			<header>
+				<nav>
+					<div style="align-items: center; display:flex;">
+						<a href="index.html"><img class="logo-image" src="Images/new_logo_transparent.png"></a>
+						<a class="navigation_title" href="hyperloop.html">Hyperloop</a>
+						<a class="navigation_title" href="#">EHW</a>
+						<a class="navigation_title" href="teams.html">Team</a>
+						<a class="navigation_title" href="partners.html">Partners</a>
 					</div>
-				</div>
+					<!--<div>
+						<a class="navigation_title" href="new_partners.html">Partners</a>
+						<a class="navigation_title" href="contactus.html">Contact</a>-->
+					</div>
+				</nav>
+			</header>
+		</div>
+
+		<div class="ehw-details-box">
+			<div style="text-align: left; max-width: 50%; margin-right:5em;">
+				<h1 class="hyperloop-details-title">What is European Hyperloop Week?</h1>
+				<p class="hyperloop-details-text" style="margin-bottom: 1em;">The European Hyperloop Week (EHW) is dedicated to comprehensively examining the integration of Hyperloop technology into transport systems with respect to technical, economic, and political considerations. Throughout the week, industry experts and academics will provide updates and insights through conference sessions.</p>
+				<p class="hyperloop-details-text" style="margin-bottom: 1em;">Student teams from around the globe will showcase groundbreaking Hyperloop prototypes to industry representatives and the public. Daily assessments will evaluate specific categories in which teams have registered as competitors, culminating in a final design exhibition over the weekend of EHW.</p>
+				<p class="hyperloop-details-text" style="margin-bottom: 1em;">This event encourages the public to attend conferences and observe competitions to broaden their understanding of Hyperloop technology, and meet the teams of young innovators behind this transformative mode of transport.</p>
 			</div>
-		</section>
-	</main>
+			<img src="Images/ehw_logo.jpg" style="max-width: 50%; max-height:80%;">
+		</div>
+		<div class="parallax" style="object-fit:cover; background-image:url('Images/ehw2022-79.jpg'); padding-top:20%; padding-bottom: 20%;">
+			<div class="hyperloop-details-box-2">
+				<h1>EHW 2021</h1>
+				<p>Kicking off the Manchester Hyperloop soceity's participation within the EHW competition, we managed to secure ourselves 5th place in the Levitation category.</p>
+			</div>
+		</div>
+		<div class="hyperloop-details-box">
+			<h1 class="hyperloop-details-title">EHW 2022</h1>
+			<p class="hyperloop-details-text">After having a successful previous year, we wished to strive even further in 2022's EHW. Receiving participation level award in all of Mechanical, GUidance, Tracion and Full scale categories.</p>
+		</div>
 		<footer>
-		<div class="footer-privacy">
-			<p class="footer-text">Hyperloop Manchester © 2021</p>
-			<a class="footer-link" href="#">Terms</a>
-			<a class="footer-link" href="#">Privacy</a>
-		</div>
-		<div class="social-box">
-			<a class="social" href="https://www.facebook.com/hyperloopmanchester/">
-				<span class="fa fa-facebook social"></span>
-			</a>
-			<a class="social" href="https://www.instagram.com/hyperloopmanchester/">
-				<span class="fa fa-instagram social"></span>
-			</a>
-			<a class="social"href="https://www.linkedin.com/company/hyperloop-manchester/">
-				<span class="fa fa-linkedin social"></span>
-			</a>
-			<a class="social" href="https://www.youtube.com/@hyperloopmanchester3107/featured">
-				<span class="fa fa-youtube social"></span>
-			</a>
-			<a class="social" href="https://twitter.com/hyperloopmcr">
-				<span class="fa fa-twitter social"></span>
-			</a>
-			<a class="social"href="mailto:hyperloopmanchester@gmail.com">
-				<span class="fa fa-envelope social"></span>
-			</a>
-		</div>
-	</footer>
-</body>
+			<div style="display:flex; justify-content: center;">
+				<a class="social" href="https://twitter.com/hyperloopmcr">
+					<span class="fa fa-twitter social"></span>
+				</a>
+				<a class="social"href="mailto:hyperloopmanchester@gmail.com">
+					<span class="fa fa-envelope social"></span>
+				</a>
+				<a class="social" href="https://www.instagram.com/hyperloopmanchester/">
+					<span class="fa fa-instagram social"></span>
+				</a>
+				<a class="social"href="https://www.linkedin.com/company/hyperloop-manchester/">
+					<span class="fa fa-linkedin social"></span>
+				</a>
+			</div>
+			<div style="display:flex; justify-content: center; margin-bottom:1em;">
+				<div class="footer-line"></div>
+			</div>
+			<div style="display:flex; justify-content: center;">
+				<p style="color:white;">Hyperloop Manchester © 2021</p>
+			</div>
+		</footer>
+	</body>
 </html>

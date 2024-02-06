@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Hyperloop-Manchester</title>
+		<link rel="icon" type="image/png" href="Images/logo.png"/>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+				font-family:Red Hat Display,sans-serif;
+				box-sizing: border-box;
+			}
+
+			header {
+				width: 100%;
+				padding: 0 5%;
+				position: relative;
+			}
+
+			nav {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 20px 0;
+			}
+
+			footer {
+				width:100%;
+				padding-top:5em;
+				padding-bottom:3em;
+				background-color:  black;
+			}
+			.footer-line {
+				height: 1px;
+				width: 60%;
+				background: white;
+			}
+
+			.logo-image {
+				height:50px; 
+			}
+
+			.navigation_title {
+				position: relative;
+				color: white;
+				text-decoration: none;
+				display: inline-block;
+				margin: 10px 30px;
+				font-size:1.2em;
+			}
+
+			.navigation_title:after {
+				content: '';
+				position: absolute;
+				width: 100%;
+				transform: scaleX(0);
+				height: 2px;
+				bottom: 0;
+				left: 0;
+				background-color: rgb(252,196,2);
+				transform-origin: bottom left;
+				transition: transform 0.25s ease-out;
+			}
+
+			.navigation_title:hover:after {
+			  	transform: scaleX(1);
+			  	transform-origin: bottom left;
+			}
+
+			.parallax {
+				height: 100vh; 
+				background-attachment: fixed;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+
+			.info-box {
+				max-width: 80%;
+				align-items: center;
+				margin-left:auto;
+				margin-right:auto;
+				display:flex;
+				flex-direction: column;
+				padding-top:1em;
+				padding-bottom: 1em;
+			}
+
+			.text-box {
+				display:flex;
+				flex-direction:column;
+			}
+
+			.info-text {
+				color: black;
+				font-size:1em;
+				margin-bottom:1.0em;
+				text-align:center;
+			}
+
+			.info-title {
+				color: black;
+				margin-bottom:1em;
+				font-size: 2.2em;
+				text-align: center;
+			}
+
+			.info-image {
+				width:40vw;
+				padding: 10%;
+			}
+
+			.learn-more {
+				background-color: transparent;
+				border: 2px solid gray;
+				border-radius: 18px;
+				margin-top:1em;
+				margin-left:auto;
+				margin-right:auto;
+				padding-left:30px;
+				padding-right:30px;
+				padding-top:10px;
+				padding-bottom:10px;
+			}
+
+			.learn-more a {
+				text-decoration: none;
+				color: black;
+			}
+
+			.learn-more:hover {
+				border-color: rgb(252,196,2);
+			}
+
+			.footer-privacy {
+				display:flex;
+			}
+
+			.footer-text {
+				color: white;
+				font-size:1.5em;
+				margin-left:2em;
+			}
+
+			.footer-link {
+				color:rgb(252,196,2);
+				text-decoration:none;
+				font-size:1.5em;
+				padding-left:1.5em;
+				padding-top:0.5em;
+				font-family:Red Hat Display,sans-serif;
+			}
+
+			.social {
+				text-decoration:none;
+				color:white;
+				padding:0.5em;
+				font-size:3em;
+			}
+
+			.social-box {
+				display:flex;
+			}
+			.partner-images {
+				margin-top:3em;
+				margin-bottom:3em;
+				text-align:center;
+			}
+
+			.partner-box {
+				margin-top:1em;
+				margin-bottom:1em;
+				align-items: center;
+			}
+
+			.sponsor-image {
+				width:15%;
+				height:15%;
+				margin:1em 5em;
+			}
+			.text-box {
+				border-left: 0.8em solid rgb(252,196,2);
+			}
+
+			/*.team-title span, .partner-title span {
+				background-color: transparent;
+			    padding:0 2em;
+			}*/
+
+			.yellow-button {
+				background-color: rgb(252,196,2);
+				color:white;
+				border:none;
+				font-size:1.5em;
+				font-family:Red Hat Display,sans-serif;
+				padding:10px;
+				margin-top:15px;
+			}
+
+			.team-title, .partner-title {
+				color : white;
+				text-align:center;
+				font-size:2.5em;
+				font-family:Red Hat Display,sans-serif;
+				padding-left:2em;
+				padding-right:2em;
+			}
+
+			.partner-title-container {
+				display:flex; 
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.line {
+				height: 1px;
+				width: 20%;
+				background: white;
+			}
+
+			.hyperloop-details-box {
+				background-color: white;
+				text-align:center;
+				justify-content: center;
+				padding-left: 20%;
+				padding-right: 20%;
+				padding-top: 4%;
+				padding-bottom: 5%
+			}
+
+			.hyperloop-details-title {
+				color: black;
+				margin-bottom:1em;
+				font-family:Red Hat Display,sans-serif;
+
+			}
+
+			.hyperloop-details-text {
+				color: #8A8A8A;
+				font-family:Red Hat Display,sans-serif;
+			}
+
+			.hyperloop-details-box-2 {
+				display: flex; 
+				flex-direction: column; 
+				margin-left: 10%; 
+				max-width: 30%; 
+				text-align: left; 
+				color: white;
+				font-family:Red Hat Display,sans-serif;
+			}
+		</style>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body style="background-color: white; height:100%; display:grid;">
+		<div class="parallax" style="object-fit:cover; background-image:url('Images/Hyperloop Tube.jpg');">
+			<header>
+				<nav>
+					<div style="align-items: center; display:flex;">
+						<a href="index.html"><img class="logo-image" src="Images/new_logo_transparent.png"></a>
+						<a class="navigation_title" href="#">Hyperloop</a>
+						<a class="navigation_title" href="ehw.html">EHW</a>
+						<a class="navigation_title" href="teams.html">Team</a>
+						<a class="navigation_title" href="partners.html">Partners</a>
+					</div>
+					<!--<div>
+						<a class="navigation_title" href="new_partners.html">Partners</a>
+						<a class="navigation_title" href="contactus.html">Contact</a>
+					</div>-->
+				</nav>
+			</header>
+		</div>
+
+		<div class="hyperloop-details-box">
+			<h1 class="hyperloop-details-title">What is Hyperloop?</h1>
+			<p class="hyperloop-details-text">The Hyperloop concept envisions a high-speed transportation system where streamlined capsules traverse low-pressure tubes, utilizing magnetic or air-based levitation to minimize friction and enable rapid speeds, potentially exceeding 700 miles per hour. Elevated on supports, the tubes are maintained at reduced pressure to enhance efficiency. This innovative system, proposed by Elon Musk, aims to connect major cities, significantly reducing travel times. However, despite its promising features, substantial challenges, including technical complexities, regulatory considerations, and financial aspects, must be addressed before widespread implementation. Research and development efforts are underway globally to overcome these hurdles and advance the Hyperloop concept towards practical realization.</p>
+		</div>
+		<div class="parallax" style="object-fit:cover; background-image:url('Images/Hyperloop Map.jpeg'); padding-top:20%; padding-bottom: 20%;">
+			<div class="hyperloop-details-box-2">
+				<h1>The Mission</h1>
+				<p>The main goal of the Hyperloop is to revolutionize transportation by providing an ultra-fast, energy-efficient, and cost-effective mode of travel. Key objectives include significantly reducing travel times between major cities, enhancing transportation sustainability through energy-efficient technologies, and addressing challenges associated with congestion and long-distance commuting.</p>
+			</div>
+		</div>
+		<div class="hyperloop-details-box">
+			<h1 class="hyperloop-details-title">What does Manchester Do?</h1>
+			<p class="hyperloop-details-text">Manchester Hyperloop's mission is to foster excellence in engineering by providing our team of  students with the opportunity to engage in hands-on, real-world engineering projects. As a society, we are dedicated to designing, building, and continuously improving a Hyperloop pod, with the aim of enhancing our technical skills, teamwork, and innovation capabilities.</p>
+			<br>
+			<p class="hyperloop-details-text">Our primary objective is not just to build a Hyperloop pod but to refine and advance our designs year on year. By participating in the European Hyperloop Week competition annually, we challenge ourselves to push the boundaries of what is possible. This commitment to continuous improvement reflects our dedication to learning and growth, both as individuals and as a collective.</p>
+			<br>
+			<p class="hyperloop-details-text">Our society is not just about building a competitive Hyperloop pod; it's about creating a community of forward-thinking engineers who are ready to contribute to the advancement of sustainable and high-speed transportation.</p>
+		</div>
+		<!--<div class="parallax" style="object-fit:cover; background-image:url('Images/Inside Pod.jpeg'); padding-top:20%; padding-bottom: 20%;">
+			<div class="hyperloop-details-box-2">
+				<h1>Our Goal</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+				<button class="learn-more" style="color:white;">Learn More</button>
+			</div>
+		</div>-->
+		<footer>
+			<div style="display:flex; justify-content: center;">
+				<a class="social" href="https://twitter.com/hyperloopmcr">
+					<span class="fa fa-twitter social"></span>
+				</a>
+				<a class="social"href="mailto:hyperloopmanchester@gmail.com">
+					<span class="fa fa-envelope social"></span>
+				</a>
+				<a class="social" href="https://www.instagram.com/hyperloopmanchester/">
+					<span class="fa fa-instagram social"></span>
+				</a>
+				<a class="social"href="https://www.linkedin.com/company/hyperloop-manchester/">
+					<span class="fa fa-linkedin social"></span>
+				</a>
+			</div>
+			<div style="display:flex; justify-content: center; margin-bottom:1em;">
+				<div class="footer-line"></div>
+			</div>
+			<div style="display:flex; justify-content: center;">
+				<p style="color:white;">Hyperloop Manchester © 2021</p>
+			</div>
+		</footer>
+	</body>
+</html>

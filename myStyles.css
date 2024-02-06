@@ -3,6 +3,10 @@
 	margin:0px;
 }
 
+body, html {
+  height: 100%;
+}
+
 header {
 	height:10vh;
 	background-color:black;
@@ -67,6 +71,19 @@ p {
 	margin-left:15px;
 }
 
+.parallax {
+  /* The image used */
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .team-title, .partner-title {
 	color : white;
 	text-align:center;
@@ -76,6 +93,7 @@ p {
 	border-bottom: 1px solid white; 
 	line-height: 0.1em;
 	margin-left:5%;
+	margin-top:1em;
 }
 
 .team-title span, .partner-title span {
@@ -85,6 +103,8 @@ p {
 
 .team-members {
 	display: flex;
+	flex-direction:row;
+	flex-wrap:wrap;
 	justify-content: center;
 	margin-top:3em;
 	margin-bottom:3em;
@@ -137,11 +157,16 @@ p {
 	margin:1em 5em;
 }
 
+.info {
+	background-color: rgb(31,2,29)
+}
+
 .info-box {
 	max-width:60%;
 	margin-left:auto;
 	margin-right:auto;
-	margin-top:3em;
+	padding-top:1em;
+	padding-bottom: 3em;
 }
 
 .info-image {

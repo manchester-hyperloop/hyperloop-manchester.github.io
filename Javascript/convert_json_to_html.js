@@ -1,4 +1,4 @@
-function test(){
+function get_teams(){
     jsonData =
         [{
         "name": "Committee",
@@ -470,8 +470,6 @@ function test(){
         const title = document.createElement("h1");
         title_span = document.createElement("span")
         title_span.innerHTML = data[i].name
-        //const title_node = document.createTextNode(data[i].name);
-        //title.appendChild(title_node);
         title.appendChild(title_span)
         title.classList.add("team-title")
         container.appendChild(title);
