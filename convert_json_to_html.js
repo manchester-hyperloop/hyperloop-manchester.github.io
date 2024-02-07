@@ -6,6 +6,11 @@ function get_teams(){
         "description": "",
         "members": [
           {
+            "name": "Harry Shakesheff",
+            "photoUrl": "./members/x.jpg",
+            "position": "President"
+          },
+          {
             "name": "Dhillon Dhass Zhao",
             "photoUrl": "./members/x.jpg",
             "position": "Vice President"
@@ -29,6 +34,46 @@ function get_teams(){
             "name": "Barış Gürel",
             "photoUrl": "./members/x.jpg",
             "position": "Treasurer"
+          },
+          {
+            "name": "Vadan Khan",
+            "photoUrl": "./members/x.jpg",
+            "position": "Head of Magnetic Levitation"
+          },
+          {
+            "name": "Alexander Neytchev",
+            "photoUrl": "./members/x.jpg",
+            "position": "Head of Chassis"
+          },
+          {
+            "name": "Nabhanyu Shetti",
+            "photoUrl": "./members/x.jpg",
+            "position": "Head of Braking"
+          },
+          {
+            "name": "Thomas Johnson",
+            "photoUrl": "./members/x.jpg",
+            "position": "Head of Magnetic Braking"
+          },
+          {
+            "name": "Tibault Dary-Alabaster",
+            "photoUrl": "./members/x.jpg",
+            "position": "Head of Full Scale"
+          },
+          {
+            "name": "Max Sheng Che Chang",
+            "photoUrl": "./members/x.jpg",
+            "position": "Head of Suspension"
+          },
+          {
+            "name": "Rohan Verma",
+            "photoUrl": "./members/x.jpg",
+            "position": "Head of Electronics and Software"
+          },
+          {
+            "name": "Jacqueline Lin",
+            "photoUrl": "./members/x.jpg",
+            "position": "Head of Business and Sponsorship"
           }
         ]
       }
