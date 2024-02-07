@@ -34,8 +34,8 @@ function get_teams(){
             "name": "Barış Gürel",
             "photoUrl": "./members/x.jpg",
             "position": "Treasurer"
-          },
-          {
+          }
+          /*{
             "name": "Vadan Khan",
             "photoUrl": "./members/x.jpg",
             "position": "Head of Magnetic Levitation"
@@ -74,7 +74,7 @@ function get_teams(){
             "name": "Jacqueline Lin",
             "photoUrl": "./members/x.jpg",
             "position": "Head of Business and Sponsorship"
-          }
+          }*/
         ]
       }
     ]
