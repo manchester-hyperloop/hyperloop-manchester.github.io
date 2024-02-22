@@ -34,8 +34,23 @@ function get_teams(){
             "name": "Barış Gürel",
             "photoUrl": "./members/x.jpg",
             "position": "Treasurer"
+          },
+          {
+            "name": "Neha Phillip",
+            "photoUrl": "./members/x.jpg",
+            "position": "General Secretary & Inlcusivity Officer"
+          },
+          {
+            "name": "Mai Hamza",
+            "photoUrl": "./members/x.jpg",
+            "position": "Social Secretary"
           }
           /*{
+            "name": "Rohan Verma",
+            "photoUrl": "./members/x.jpg",
+            "position": "Head of Electronics and Software"
+          },
+          {
             "name": "Vadan Khan",
             "photoUrl": "./members/x.jpg",
             "position": "Head of Magnetic Levitation"
@@ -64,11 +79,6 @@ function get_teams(){
             "name": "Max Sheng Che Chang",
             "photoUrl": "./members/x.jpg",
             "position": "Head of Suspension"
-          },
-          {
-            "name": "Rohan Verma",
-            "photoUrl": "./members/x.jpg",
-            "position": "Head of Electronics and Software"
           },
           {
             "name": "Jacqueline Lin",
