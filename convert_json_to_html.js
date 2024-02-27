@@ -32,7 +32,7 @@ function get_teams(){
           },
           {
             "name": "Barış Gürel",
-            "photoUrl": "./members/baris-grurel.jpg",
+            "photoUrl": "./members/baris-gurel.jpg",
             "position": "Treasurer"
           },
           {
