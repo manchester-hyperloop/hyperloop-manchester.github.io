@@ -7,12 +7,12 @@ function get_teams(){
         "members": [
           {
             "name": "Harry Shakesheff",
-            "photoUrl": "./members/x.jpg",
+            "photoUrl": "./members/harry-shakesheff.jpg",
             "position": "President"
           },
           {
             "name": "Dhillon Dhass Zhao",
-            "photoUrl": "./members/x.jpg",
+            "photoUrl": "./members/dhillon-das.jpg",
             "position": "Vice President"
           },
           {
@@ -22,7 +22,7 @@ function get_teams(){
           },
           {
             "name": "Adithya Vadakkadath",
-            "photoUrl": "./members/x.jpg",
+            "photoUrl": "./members/adithya-vadakkadath.jpg",
             "position": "Project Manager"
           },
           {
@@ -32,59 +32,20 @@ function get_teams(){
           },
           {
             "name": "Barış Gürel",
-            "photoUrl": "./members/x.jpg",
+            "photoUrl": "./members/baris-grurel.jpg",
             "position": "Treasurer"
           },
           {
             "name": "Neha Phillip",
-            "photoUrl": "./members/x.jpg",
+            "photoUrl": "./members/neha-philip.jpg",
             "position": "General Secretary & Inlcusivity Officer"
           },
           {
             "name": "Mai Hamza",
-            "photoUrl": "./members/x.jpg",
+            "photoUrl": "./members/mai-hamza.jpg",
             "position": "Social Secretary"
           }
-          /*{
-            "name": "Rohan Verma",
-            "photoUrl": "./members/x.jpg",
-            "position": "Head of Electronics and Software"
-          },
-          {
-            "name": "Vadan Khan",
-            "photoUrl": "./members/x.jpg",
-            "position": "Head of Magnetic Levitation"
-          },
-          {
-            "name": "Alexander Neytchev",
-            "photoUrl": "./members/x.jpg",
-            "position": "Head of Chassis"
-          },
-          {
-            "name": "Nabhanyu Shetti",
-            "photoUrl": "./members/x.jpg",
-            "position": "Head of Braking"
-          },
-          {
-            "name": "Thomas Johnson",
-            "photoUrl": "./members/x.jpg",
-            "position": "Head of Magnetic Braking"
-          },
-          {
-            "name": "Tibault Dary-Alabaster",
-            "photoUrl": "./members/x.jpg",
-            "position": "Head of Full Scale"
-          },
-          {
-            "name": "Max Sheng Che Chang",
-            "photoUrl": "./members/x.jpg",
-            "position": "Head of Suspension"
-          },
-          {
-            "name": "Jacqueline Lin",
-            "photoUrl": "./members/x.jpg",
-            "position": "Head of Business and Sponsorship"
-          }*/
+          
         ]
       }
     ]
