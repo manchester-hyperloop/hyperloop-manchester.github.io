@@ -17,7 +17,7 @@ function get_teams(){
           },
           {
             "name": "Rafael Augusto Delicoli Franco",
-            "photoUrl": "./members/x.jpg",
+            "photoUrl": "./members/rafael-franco.jpg",
             "position": "Chief Engineer"
           },
           {
@@ -27,7 +27,7 @@ function get_teams(){
           },
           {
             "name": "Manahil Ullah",
-            "photoUrl": "./members/x.jpg",
+            "photoUrl": "./members/manahil-ullah.jpg",
             "position": "Project Manager"
           },
           {
