@@ -27,11 +27,18 @@
 				padding: 20px 0;
 			}
 
+			/*footer {
+				width:100%;
+				padding-top:3em;
+				padding-bottom:3em;
+				background-color:black;
+				border-top:1px solid rgb(252,196,2);
+			}*/
 			footer {
 				width:100%;
 				padding-top:5em;
 				padding-bottom:3em;
-				background-color:  black;
+				background-color: black;
 			}
 			.footer-line {
 				height: 1px;
@@ -92,6 +99,7 @@
 			.text-box {
 				display:flex;
 				flex-direction:column;
+				text-align: center;
 			}
 
 			.info-text {
@@ -181,9 +189,6 @@
 				height:15%;
 				margin:1em 5em;
 			}
-			.text-box {
-				border-left: 0.8em solid rgb(252,196,2);
-			}
 
 			/*.team-title span, .partner-title span {
 				background-color: transparent;
@@ -201,7 +206,7 @@
 			}
 
 			.team-title, .partner-title {
-				color : white;
+				color: white;
 				text-align:center;
 				font-size:2.5em;
 				font-family:Red Hat Display,sans-serif;
@@ -222,85 +227,76 @@
 				background: white;
 			}
 
-			.hyperloop-details-box {
-				background-color: white;
-				text-align:center;
-				justify-content: center;
-				padding-left: 20%;
-				padding-right: 20%;
-				padding-top: 4%;
-				padding-bottom: 5%
-			}
 
-			.hyperloop-details-title {
-				color: black;
-				margin-bottom:1em;
-				font-family:Red Hat Display,sans-serif;
-
-			}
-
-			.hyperloop-details-text {
-				color: #8A8A8A;
-				font-family:Red Hat Display,sans-serif;
-			}
-
-			.hyperloop-details-box-2 {
-				display: flex; 
-				flex-direction: column; 
-				margin-left: 10%; 
-				max-width: 30%; 
-				text-align: left; 
-				color: white;
-				font-family:Red Hat Display,sans-serif;
-			}
 		</style>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body style="background-color: white; height:100%; display:grid;">
-		<div class="parallax" style="object-fit:cover; background-image:url('Images/Hyperloop Tube.jpg');">
+		<div class="parallax" style="object-fit:cover; background-image:url('Images/slide-pod-tube.jpg');">
 			<header>
 				<nav>
 					<div style="align-items: center; display:flex;">
 						<a href="index.html"><img class="logo-image" src="Images/new_logo_transparent.png"></a>
-						<a class="navigation_title" href="#">Hyperloop</a>
+						<a class="navigation_title" href="hyperloop.html">Hyperloop</a>
 						<a class="navigation_title" href="ehw.html">EHW</a>
-						<!--<a class="navigation_title" href="research.html">Research</a>-->
+						<a class="navigation_title" href="#">Research</a>
 						<a class="navigation_title" href="teams.html">Team</a>
 						<a class="navigation_title" href="partners.html">Partners</a>
 					</div>
 					<!--<div>
-						<a class="navigation_title" href="new_partners.html">Partners</a>
+						<a class="navigation_title" href="#">Partners</a>
 						<a class="navigation_title" href="contactus.html">Contact</a>
 					</div>-->
 				</nav>
 			</header>
 		</div>
 
-		<div class="hyperloop-details-box">
-			<h1 class="hyperloop-details-title">What is Hyperloop?</h1>
-			<p class="hyperloop-details-text">The Hyperloop concept envisions a high-speed transportation system where streamlined capsules traverse low-pressure tubes, utilizing magnetic or air-based levitation to minimize friction and enable rapid speeds, potentially exceeding 700 miles per hour. Elevated on supports, the tubes are maintained at reduced pressure to enhance efficiency. This innovative system, proposed by Elon Musk, aims to connect major cities, significantly reducing travel times. However, despite its promising features, substantial challenges, including technical complexities, regulatory considerations, and financial aspects, must be addressed before widespread implementation. Research and development efforts are underway globally to overcome these hurdles and advance the Hyperloop concept towards practical realization.</p>
-		</div>
-		<div class="parallax" style="object-fit:cover; background-image:url('Images/Hyperloop Map.jpeg'); padding-top:20%; padding-bottom: 20%;">
-			<div class="hyperloop-details-box-2">
-				<h1>The Mission</h1>
-				<p>The main goal of the Hyperloop is to revolutionize transportation by providing an ultra-fast, energy-efficient, and cost-effective mode of travel. Key objectives include significantly reducing travel times between major cities, enhancing transportation sustainability through energy-efficient technologies, and addressing challenges associated with congestion and long-distance commuting.</p>
+		<div class="parallax" style="object-fit:cover; background-image:url('Images/slide-tube.jpg'); height:100vh; padding-top:5%;">
+			<div>
+				<div class="partner-title-container">
+					<div class="line" style="margin-left:10%;"></div>
+					<h2 class="partner-title">Our Research</h2>
+					<div class="line" style="margin-right:10%;"></div>
+				</div>
+				<div class="partner-images">
+					<div class="partner-box">
+						<a href="https://www.manchester.ac.uk/"><img class="sponsor-image" src="sponsors/uom-white.png"></a>
+						<a href="https://altair.com/"><img class="sponsor-image" src="sponsors/altair-white.png"></a>
+					</div>
+					<div class="partner-box">
+						<a href="https://www.goudsmit.co.uk/"><img class="sponsor-image" src="sponsors/goudsmit-uk-white.png"></a>
+						<a href="https://proformancemetals.co.uk/"><img class="sponsor-image" src="sponsors/proformance.png"></a>
+					</div>
+					<div class="partner-box">
+						<a href="https://www.nixenepublishing.com/"><img class="sponsor-image" src="sponsors/nixenepublishing.png"></a>
+						<a href="https://cellerate.co.uk/"><img class="sponsor-image" src="sponsors/cellerate.png"></a>
+						<br>
+						<a href="https://www.3ds.com/3dexperience"><img class="sponsor-image" src="sponsors/3d-experience-white.png"></a>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="hyperloop-details-box">
-			<h1 class="hyperloop-details-title">What does Hyperloop Manchester Do?</h1>
-			<p class="hyperloop-details-text">Manchester Hyperloop's mission is to foster excellence in engineering by providing our team of  students with the opportunity to engage in hands-on, real-world engineering projects. As a society, we are dedicated to designing, building, and continuously improving a Hyperloop pod, with the aim of enhancing our technical skills, teamwork, and innovation capabilities.</p>
-			<br>
-			<p class="hyperloop-details-text">Our primary objective is not just to build a Hyperloop pod but to refine and advance our designs year on year. By participating in the European Hyperloop Week competition annually, we challenge ourselves to push the boundaries of what is possible. This commitment to continuous improvement reflects our dedication to learning and growth, both as individuals and as a collective.</p>
-			<br>
-			<p class="hyperloop-details-text">Our society is not just about building a competitive Hyperloop pod; it's about creating a community of forward-thinking engineers who are ready to contribute to the advancement of sustainable and high-speed transportation.</p>
-		</div>
-		<!--<div class="parallax" style="object-fit:cover; background-image:url('Images/Inside Pod.jpeg'); padding-top:20%; padding-bottom: 20%;">
-			<div class="hyperloop-details-box-2">
-				<h1>Our Goal</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-				<button class="learn-more" style="color:white;">Learn More</button>
+		<div class="parallax" style="object-fit:cover; background-image:url('Images/slide-pod-concrete.jpg'); height:100vh; padding-top:5%;">
+				<div class="partner-title-container">
+					<div class="line" style="margin-left:10%;"></div>
+					<h2 class="partner-title">Become a Partner</h2>
+					<div class="line" style="margin-right:10%;"></div>
+				</div>
+			<div class="info-box" style="margin-top: 10%;">
+				<!--<h1 style="color:white; margin-top:1.5em">JOIN THE PROGRAM - BECOME A PARTNER</h1>-->
+				<div class="text-box">
+					<p style="color:white; font-size:1.5em; padding-left:0.5em; font-family:Red Hat Display,sans-serif; padding-top:0.5em;">The Hyperloop concept itself is an innovation pushing the very boundaries of transportation technology; therefore, it only makes sense that our vision and ideas are of the same magnitude. Our goal is to build the fastest pod we can and win the Hyperloop Pod Competition. To achieve this, we rely on the valuable contributions from our sponsors, who support us in technical, material and financial matters.</p>
+					<p style="color:white; font-size:1.5em; padding-left:0.5em; font-family:Red Hat Display,sans-serif; padding-top:0.5em;">Are you interested in making the fifth mode of transport a reality with us? For more information, contact us at: hyperloopmanchester@gmail.com and we will get in touch.</p>
+					<p style="color:white; font-size:1.5em; padding-left:0.5em; font-family:Red Hat Display,sans-serif; padding-top:0.5em; margin-bottom: 2em;">Please view our Hyperloop Manchester info pack by clicking the button below.</p>
+					<div style="text-align: center;">
+						<a href="Files/sponsor-pack.pdf" download>
+							<button class="yellow-button">Open Info-Pack</button>
+						</a>
+					</div>	
+				</div>
 			</div>
-		</div>-->
+		</div>
+
 		<footer>
 			<div style="display:flex; justify-content: center;">
 				<a class="social" href="https://twitter.com/hyperloopmcr">
@@ -320,8 +316,36 @@
 				<div class="footer-line"></div>
 			</div>
 			<div style="display:flex; justify-content: center;">
-				<p style="color:white;">Hyperloop Manchester © 2024</p>
+				<p style="color:white;">Hyperloop Manchester © 2021</p>
 			</div>
 		</footer>
+
+		<!--<footer>
+			<div class="footer-privacy">
+				<p class="footer-text">Hyperloop Manchester © 2021</p>
+				<a class="footer-link" href="#">Terms</a>
+				<a class="footer-link" href="#">Privacy</a>
+			</div>
+			<div class="social-box">
+				<a class="social" href="https://www.facebook.com/hyperloopmanchester/">
+					<span class="fa fa-facebook social"></span>
+				</a>
+				<a class="social" href="https://www.instagram.com/hyperloopmanchester/">
+					<span class="fa fa-instagram social"></span>
+				</a>
+				<a class="social"href="https://www.linkedin.com/company/hyperloop-manchester/">
+					<span class="fa fa-linkedin social"></span>
+				</a>
+				<a class="social" href="https://www.youtube.com/@hyperloopmanchester3107/featured">
+					<span class="fa fa-youtube social"></span>
+				</a>
+				<a class="social" href="https://twitter.com/hyperloopmcr">
+					<span class="fa fa-twitter social"></span>
+				</a>
+				<a class="social"href="mailto:hyperloopmanchester@gmail.com">
+					<span class="fa fa-envelope social"></span>
+				</a>
+			</div>
+		</footer>-->
 	</body>
 </html>

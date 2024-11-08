@@ -6,43 +6,48 @@ function get_teams(){
         "description": "",
         "members": [
           {
-            "name": "Harry Shakesheff",
-            "photoUrl": "./members/harry-shakesheff.jpg",
+            "name": "Barış Gürel",
+            "photoUrl": "./members/baris-gurel.jpg",
             "position": "President"
           },
           {
-            "name": "Dhillon Dhass Zhao",
-            "photoUrl": "./members/dhillon-das.jpg",
+            "name": "Kaustubh Girish",
+            "photoUrl": "./members/kaustubh-girish.jpg",
             "position": "Vice President"
           },
           {
-            "name": "Rafael Augusto Delicoli Franco",
-            "photoUrl": "./members/rafael-franco.jpg",
+            "name": "Rutvik Perepa",
+            "photoUrl": "./members/rutvik-perepa.jpg",
             "position": "Chief Engineer"
           },
           {
-            "name": "Adithya Vadakkadath",
-            "photoUrl": "./members/adithya-vadakkadath.jpg",
+            "name": "Nabhanyu Shetti",
+            "photoUrl": "./members/nabhanyu-shetti.png",
             "position": "Project Manager"
           },
           {
-            "name": "Manahil Ullah",
-            "photoUrl": "./members/manahil-ullah.jpg",
+            "name": "Matthew Djong",
+            "photoUrl": "./members/matthew-djong.jpg",
             "position": "Project Manager"
           },
           {
-            "name": "Barış Gürel",
-            "photoUrl": "./members/baris-gurel.jpg",
+            "name": "Neme Okoroafor",
+            "photoUrl": "./members/temp-profile.png",
+            "position": "Secretary"
+          },
+          {
+            "name": "Matthew Smith",
+            "photoUrl": "./members/temp-profile.png",
             "position": "Treasurer"
           },
           {
-            "name": "Neha Phillip",
-            "photoUrl": "./members/neha-philip.jpg",
-            "position": "General Secretary & Inlcusivity Officer"
+            "name": "Veronica Mendez",
+            "photoUrl": "./members/veronica-mendez.jpg",
+            "position": "Inlcusivity & Diversity Officer"
           },
           {
-            "name": "Mai Hamza",
-            "photoUrl": "./members/mai-hamza.jpg",
+            "name": "Cengizhan Dogan",
+            "photoUrl": "./members/temp-profile.png",
             "position": "Social Secretary"
           }
           
