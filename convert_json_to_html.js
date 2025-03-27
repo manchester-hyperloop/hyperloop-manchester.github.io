@@ -26,8 +26,8 @@ function get_teams(){
             "position": "Project Manager"
           },
           {
-            "name": "Matthew Djong",
-            "photoUrl": "./members/matthew-djong.jpg",
+            "name": "Ekta Nair",
+            "photoUrl": "./members/ekta-nair.jpg",
             "position": "Project Manager"
           },
           {
@@ -37,7 +37,7 @@ function get_teams(){
           },
           {
             "name": "Matthew Smith",
-            "photoUrl": "./members/temp-profile.png",
+            "photoUrl": "./members/matt-smith.png",
             "position": "Treasurer"
           },
           {
