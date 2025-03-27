@@ -37,7 +37,7 @@ function get_teams(){
           },
           {
             "name": "Matthew Smith",
-            "photoUrl": "./members/matt-smith.png",
+            "photoUrl": "./members/matt-smith.jpeg",
             "position": "Treasurer"
           },
           {
